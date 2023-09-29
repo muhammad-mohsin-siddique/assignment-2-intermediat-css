@@ -1,0 +1,20 @@
+.main-container1{
+    margin: auto;
+
+    max-width: 10em;
+    min-height: 5em;
+    border: 10px solid cyan;
+    font-size: 3rem;
+}
+.sub-container{
+    font-size: 22px;
+    width: 10vw;
+    height: 9vh;
+    color: white;
+    background-color: red;
+    overflow: hidden;
+    /* margin: auto; */
+    margin-top: 20px;
+    text-align: center;
+    padding: 20px;
+}

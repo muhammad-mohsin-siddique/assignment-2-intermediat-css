@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.nav-bar{
+    background-color: black;
+    font-weight: bolder;
+    font-size: larger;
+    padding: 10px 20px;
+
+}
+.list{
+    list-style: none;
+}
+.list li {
+    display: inline-block;
+    position: relative;
+}
+.list li a {
+    color: yellow;
+    text-decoration: none;
+    display: block;
+    padding: 20px 25px;
+    text-align: center;
+}
+ul li .dropdown li{
+    display: block;
+}
+.dropdown{
+    width: 100%;
+    position: absolute;
+    display: none;
+    min-width: 160px;
+    background-color: black;
+    z-index: 1;
+}
+.dropdown-list{
+    transition-duration: 0.9s;
+    transition-property: background;
+}
+ul li:hover ul.dropdown{
+    display: block;
+}
+a:hover{
+    background-color: rgb(49, 49, 49);
+}
+.dropdown-list:hover{
+    background-color: rgb(122, 111, 111);
+}
+ul li:hover ul  .dropdown{
+    display: block;
+}
+.box-1, button, .box-2{
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100px;
+    height: 100px;
+    background-color: lightgray;
+    margin-left: 8%;
+    margin-top: 2%;
+    margin-bottom: 5%;
+    font-weight: bold;
+    font-size: large;   
+}
+.box-1{
+    box-shadow: 5px 5px 8px grey;
+    transition-property: box-shadow;
+    transition-duration: 1s;
+}
+.box-1:hover{
+    box-shadow: -5px 5px 6px red;
+}
+button{
+    width: auto;
+    height: auto;
+    background-color: blue;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    transition-property: background;
+    transition-duration: 2s;
+
+}
+button:hover{
+    background-color: red;
+}
+.box-2{
+    width: 200px;
+    height: 200px;
+    color: darkgray;
+    text-align: center;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+    position: relative;
+    left: 400px;
+    top: -300px;
+    /* right: -1px; */
+
+}
+.box-2-content{
+    position: relative;
+    top: 85px;
+}
+.box-2:hover{
+    border-radius: 50%;
+    cursor: pointer;
+    transform: scale(1.5);
+}
